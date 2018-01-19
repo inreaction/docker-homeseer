@@ -8,7 +8,14 @@ ENV HOMESEER_VERSION=3_0_0_368
 RUN apt-get update && apt-get install -y \
     chromium \
     flite \
+    libmono-system-data-datasetextensions4.0-cil \
+    libmono-system-design4.0.cil \
+    libmono-system-runtime-caching4.0-cil \
+    libmono-system-web4.0.cil \
+    libmono-system-web-extensions4.0-cil \
     mono-complete \
+    mono-devel \
+    mono-vbnc \
     wget \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
