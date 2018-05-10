@@ -17,7 +17,7 @@ RUN chmod +x /tini
 COPY start.sh /
 RUN touch /DO_INSTALL
 
-VOLUME [ "/HomeSeer" ] 
+#VOLUME [ "/HomeSeer" ] 
 EXPOSE 80 10200 10300 10401 
 
 ENTRYPOINT [ "/tini", "--", "/start.sh" ]
